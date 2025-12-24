@@ -130,7 +130,8 @@ vprofile-aws-rearchitecture/
 │   └── aws-services-mapping.md
 │
 ├── diagrams/
-│   └── aws-architecture.png
+│   ├── aws-architecture.png
+│   └── execution_flow.png
 │   
 ├── infrastructure/
 │   ├── security-groups.md
