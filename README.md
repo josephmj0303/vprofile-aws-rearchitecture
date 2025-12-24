@@ -28,6 +28,51 @@ The application was re-architected using AWS managed services with:
 
 ---
 
+## How to Deploy (Quick Start)
+
+* This section provides a high-level deployment flow.  
+* Detailed steps are documented under `execution-flow/`.
+
+### Prerequisites
+- AWS account
+- AWS CLI configured with appropriate IAM permissions
+- Java and Maven installed
+- Domain name (optional, for Route 53 and CloudFront)
+
+### Steps
+1. Clone the repository:
+```bash
+   git clone https://github.com/josephmj0303/vprofile-aws-rearchitecture.git
+```
+2. Configure AWS credentials:
+```
+aws configure
+```
+3. Provision AWS resources by following:
+```
+execution-flow/
+├── phase-1-infra-setup.md
+├── phase-2-app-deployment.md
+└── phase-3-dns-cdn.md
+```
+4. Build and deploy the application:
+
+- Update backend configuration with AWS service endpoints
+
+- Build artifact using Maven
+
+- Deploy artifact to Elastic Beanstalk
+
+5. Deployment Validation
+Runtime behavior was verified using:
+- Successful application login and dashboard access
+- Cache miss → DB fetch → cache insert
+- Cache hit → data served from ElastiCache
+
+Screenshots are available in the `screenshots/` directory.
+
+---
+
 ## AWS Services Used
 | Service | Purpose |
 |------|-------|
@@ -70,16 +115,6 @@ User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Servic
 - Isolated backend services using security group referencing
 - Designed deployment flow aligned with production environments
 - Reduced operational burden by removing manual server maintenance
-
----
-
-## Deployment Validation
-Runtime behavior was verified using:
-- Successful application login and dashboard access
-- Cache miss → DB fetch → cache insert
-- Cache hit → data served from ElastiCache
-
-Screenshots are available in the `screenshots/` directory.
 
 ---
 
