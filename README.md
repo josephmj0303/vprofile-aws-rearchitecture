@@ -97,12 +97,10 @@ vprofile-aws-rearchitecture/
 ├── diagrams/
 │   └── aws-architecture.png
 │   
-│
 ├── infrastructure/
 │   ├── security-groups.md
-│   ├── key-pairs.md
 │   └── networking.md
-│
+│   
 ├── services/
 │   ├── elastic-beanstalk.md
 │   ├── rds.md
@@ -110,22 +108,12 @@ vprofile-aws-rearchitecture/
 │   ├── active-mq.md
 │   └── route53-cloudfront.md
 │
-├── deployment/
-│   ├── build-artifact.md
-│   ├── backend-deployment.md
-│   └── healthchecks-ssl.md
-│
 ├── execution-flow/
 │   ├── phase-1-infra-setup.md
 │   ├── phase-2-app-deployment.md
 │   └── phase-3-dns-cdn.md
 │
-├── automation-roadmap/
-│   ├── iac-plan.md
-│   └── ci-cd-future.md
-│
 └── screenshots/
-    ├── README.md
     ├── app-login.png
     ├── app-home.png
     ├── cache-miss.png
