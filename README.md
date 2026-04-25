@@ -48,6 +48,14 @@ The application was re-architected using AWS managed services with:
 ## 🏗️ Architecture 
 ![Architecture_diagram](diagrams/aws_rearchitecture.png)
 
+## Key Architecture Decisions
+
+- Chose Elastic Beanstalk over EC2 for managed scaling and reduced ops overhead
+- Used ElastiCache to reduce database load and improve response latency
+- Implemented ALB for layer 7 routing and SSL termination
+- Integrated CloudFront to optimize global content delivery
+- Used security group referencing for backend service isolation
+
 ### Traffic Flow:
 User → Route53 (DNS) → CloudFront (CDN) → ALB → Elastic Beanstalk (App Tier) → RDS / ElastiCache / ActiveMQ
 
