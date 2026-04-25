@@ -179,6 +179,14 @@ vprofile-aws-rearchitecture/
 ```
 ---
 
+## 🔐 Security Considerations
+
+- IAM roles used for service-level access control
+- Security groups restrict traffic between application tiers
+- HTTPS enforced via ACM + ALB
+
+---
+
 ## 📈 Future Enhancements
 - GitHub Actions pipeline for build → artifact → deploy to Elastic Beanstalk
 - Terraform modules for reproducible infrastructure provisioning
