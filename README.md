@@ -16,7 +16,7 @@ while reducing operational overhead.
 
 ---
 
-## Problem Statement
+## 🎯 Problem Statement
 The existing system suffered from:
 - High operational overhead
 - Manual provisioning and deployments
@@ -26,7 +26,7 @@ The existing system suffered from:
 
 ---
 
-## Solution Approach
+## 📈 Solution Approach
 The application was re-architected using AWS managed services with:
 - Infrastructure automation readiness
 - Pay-as-you-go cost model
@@ -43,7 +43,7 @@ User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Servic
 
 ---
 
-## How to Deploy (Quick Start)
+## ▶️ How to Deploy (Quick Start)
 
 * This section provides a high-level deployment flow.  
 * Detailed steps are documented under `execution-flow/`.
@@ -166,7 +166,7 @@ vprofile-aws-rearchitecture/
 ```
 ---
 
-## 🔥 Future Enhancements
+## 📈 Future Enhancements
 - Infrastructure as Code (Terraform)
 - CI/CD pipeline (GitHub Actions / Jenkins)
 - Blue-Green deployments
@@ -174,7 +174,7 @@ vprofile-aws-rearchitecture/
 
 ---
 
-## 📁 Author
+## 👨‍💻 Author
 DevOps Portfolio Project  
 AWS | Linux | Cloud Architecture
 
