@@ -1,6 +1,13 @@
-# VProfile AWS Re-Architecture Project
+# 🚀 VProfile AWS Re-Architecture Project
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
+![Elastic Beanstalk](https://img.shields.io/badge/Platform-ElasticBeanstalk-green)
+![RDS](https://img.shields.io/badge/Database-AmazonRDS-blue)
+![ElastiCache](https://img.shields.io/badge/Cache-ElastiCache-red)
+![ActiveMQ](https://img.shields.io/badge/Messaging-ActiveMQ-yellow)
+![CloudFront](https://img.shields.io/badge/CDN-CloudFront-black)
+![Route53](https://img.shields.io/badge/DNS-Route53-blueviolet)
 
-## Overview
+## 📌 Overview
 This project demonstrates the re-architecture of a traditional multi-tier web application (VPROFILE)
 from on-prem / VM-based infrastructure to AWS Cloud using managed services.
 
@@ -28,7 +35,7 @@ The application was re-architected using AWS managed services with:
 
 ---
 
-## Architecture Diagram
+## 🏗️ Architecture 
 ![Architecture_diagram](diagrams/aws_rearchitecture.png)
 
 ### Traffic Flow:
@@ -81,7 +88,7 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## AWS Services Used
+## 🔧 AWS Services Used
 | Service | Purpose |
 |------|-------|
 | Elastic Beanstalk | Application hosting & auto scaling |
@@ -95,7 +102,7 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## Execution Flow Summary
+## 🧠 Execution Flow Summary
 1. AWS account setup & key pairs
 2. Security group design
 3. RDS, ElastiCache, ActiveMQ provisioning
@@ -111,7 +118,7 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## Key DevOps Highlights
+## 🎯 Key DevOps Highlights
 - Re-architected monolithic VM deployment into managed AWS services
 - Implemented caching layer and validated cache hit/miss behavior
 - Isolated backend services using security group referencing
@@ -120,7 +127,7 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 ```
 vprofile-aws-rearchitecture/
 │
@@ -159,7 +166,7 @@ vprofile-aws-rearchitecture/
 ```
 ---
 
-## Future Enhancements
+## 🔥 Future Enhancements
 - Infrastructure as Code (Terraform)
 - CI/CD pipeline (GitHub Actions / Jenkins)
 - Blue-Green deployments
@@ -167,7 +174,7 @@ vprofile-aws-rearchitecture/
 
 ---
 
-## Author
+## 📁 Author
 DevOps Portfolio Project  
 AWS | Linux | Cloud Architecture
 
