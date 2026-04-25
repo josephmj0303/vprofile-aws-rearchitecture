@@ -131,12 +131,13 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## 🎯 Key DevOps Highlights
-- Re-architected monolithic VM deployment into managed AWS services
-- Implemented caching layer and validated cache hit/miss behavior
-- Isolated backend services using security group referencing
-- Designed deployment flow aligned with production environments
-- Reduced operational burden by removing manual server maintenance
+## 🚀 DevOps Capabilities Demonstrated
+
+- Cloud re-architecture (VM → managed services)
+- Layered architecture design (CDN → LB → App → DB)
+- Performance optimization using caching
+- Secure service-to-service communication
+- Deployment workflow design for production environments
 
 ---
 
