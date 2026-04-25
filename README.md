@@ -72,6 +72,12 @@ User → Route53 (DNS) → CloudFront (CDN) → ALB → Elastic Beanstalk (App T
 - Java and Maven installed
 - Domain name (optional, for Route 53 and CloudFront)
 
+### Production Considerations
+- Multi-AZ deployment for RDS
+- Auto Scaling enabled in Elastic Beanstalk
+- HTTPS enforced via ALB + ACM
+- CDN caching strategy applied via CloudFront
+
 ### Steps
 #### 1. Clone the repository:
 ```bash
@@ -106,32 +112,21 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## 🔧 AWS Services Used
-| Service | Purpose |
-|------|-------|
-| Elastic Beanstalk | Application hosting & auto scaling |
-| Application Load Balancer | Traffic distribution |
-| Amazon RDS | Managed relational database |
-| Amazon ElastiCache | In-memory caching |
-| Amazon ActiveMQ | Message broker |
-| Amazon S3 / EFS | Artifact & shared storage |
-| Route 53 | DNS management |
-| CloudFront | Content Delivery Network |
+## 🔧 Technology Stack
+
+| Category                | Technology                |
+| ----------------------- | ------------------------- |
+| Cloud                   | AWS                       |
+| Compute                 | Elastic Beanstalk         |
+| Database                | Amazon RDS (MySQL)        |
+| Cache                   | ElastiCache (Memcached)   |
+| Messaging               | Amazon MQ (ActiveMQ)      |
+| Networking              | ALB, Route53, CloudFront  |
+| Build Tool              | Maven                     |
 
 ---
 
-## 🧠 Execution Flow Summary
-1. AWS account setup & key pairs
-2. Security group design
-3. RDS, ElastiCache, ActiveMQ provisioning
-4. Elastic Beanstalk environment creation
-5. Backend security group integration
-6. Application artifact build
-7. Deployment to Beanstalk
-8. SSL & HTTPS listener configuration
-9. CDN & DNS configuration
-10. Application validation
-
+## 🧠 Execution Flow 
 ![Execution_flow](diagrams/execution_flow.png)
 
 ---
@@ -185,10 +180,10 @@ vprofile-aws-rearchitecture/
 ---
 
 ## 📈 Future Enhancements
-- Infrastructure as Code (Terraform)
-- CI/CD pipeline (GitHub Actions / Jenkins)
-- Blue-Green deployments
-- Monitoring with CloudWatch & alarms
+- GitHub Actions pipeline for build → artifact → deploy to Elastic Beanstalk
+- Terraform modules for reproducible infrastructure provisioning
+- Blue-Green deployment using Elastic Beanstalk environments
+- CloudWatch dashboards + alarms for observability
 
 ---
 
