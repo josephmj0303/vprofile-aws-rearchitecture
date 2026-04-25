@@ -28,6 +28,14 @@ The application was re-architected using AWS managed services with:
 
 ---
 
+## Architecture Diagram
+![Architecture_diagram](diagrams/aws_rearchitecture.png)
+
+### Traffic Flow:
+User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Services
+
+---
+
 ## How to Deploy (Quick Start)
 
 * This section provides a high-level deployment flow.  
@@ -40,22 +48,22 @@ The application was re-architected using AWS managed services with:
 - Domain name (optional, for Route 53 and CloudFront)
 
 ### Steps
-1. Clone the repository:
+#### 1. Clone the repository:
 ```bash
    git clone https://github.com/josephmj0303/vprofile-aws-rearchitecture.git
 ```
-2. Configure AWS credentials:
+#### 2. Configure AWS credentials:
 ```
 aws configure
 ```
-3. Provision AWS resources by following:
+#### 3. Provision AWS resources by following:
 ```
 execution-flow/
 ├── phase-1-infra-setup.md
 ├── phase-2-app-deployment.md
 └── phase-3-dns-cdn.md
 ```
-4. Build and deploy the application:
+#### 4. Build and deploy the application:
 
 - Update backend configuration with AWS service endpoints
 
@@ -63,7 +71,7 @@ execution-flow/
 
 - Deploy artifact to Elastic Beanstalk
 
-5. Deployment Validation
+#### 5. Deployment Validation
 Runtime behavior was verified using:
 - Successful application login and dashboard access
 - Cache miss → DB fetch → cache insert
@@ -87,15 +95,6 @@ Screenshots are available in the `screenshots/` directory.
 
 ---
 
-## High-Level Architecture
-### Architectural Diagram
-![Architecture_diagram](diagrams/aws_rearchitecture.png)
-
-Traffic Flow:
-User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Services
-
----
-
 ## Execution Flow Summary
 1. AWS account setup & key pairs
 2. Security group design
@@ -107,6 +106,8 @@ User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Servic
 8. SSL & HTTPS listener configuration
 9. CDN & DNS configuration
 10. Application validation
+
+![Execution_flow](diagrams/execution_flow.png)
 
 ---
 
@@ -156,7 +157,6 @@ vprofile-aws-rearchitecture/
     ├── cache-miss.png
     └── cache-hit.png
 ```
-
 ---
 
 ## Future Enhancements
@@ -164,4 +164,10 @@ vprofile-aws-rearchitecture/
 - CI/CD pipeline (GitHub Actions / Jenkins)
 - Blue-Green deployments
 - Monitoring with CloudWatch & alarms
+
+---
+
+## Author
+DevOps Portfolio Project  
+AWS | Linux | Cloud Architecture
 
