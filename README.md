@@ -88,7 +88,8 @@ Screenshots are available in the `screenshots/` directory.
 ---
 
 ## High-Level Architecture
-Refer to `diagrams/aws-architecture.png`
+### Architectural Diagram
+![Architecture_diagram](diagrams/aws_rearchitecture.png)
 
 Traffic Flow:
 User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Services
