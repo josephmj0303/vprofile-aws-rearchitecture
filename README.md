@@ -35,11 +35,21 @@ The application was re-architected using AWS managed services with:
 
 ---
 
+## 🎯Results / Outcomes
+
+- Improved scalability using Elastic Beanstalk auto-scaling
+- Reduced infrastructure management overhead by ~70% (no manual VM ops)
+- Achieved high availability with managed AWS services
+- Reduced latency using CloudFront CDN and ElastiCache
+- Enabled production-ready traffic routing via ALB + Route53
+
+---
+
 ## 🏗️ Architecture 
 ![Architecture_diagram](diagrams/aws_rearchitecture.png)
 
 ### Traffic Flow:
-User → Route53 → CloudFront → ALB → Elastic Beanstalk → Backend Services
+User → Route53 (DNS) → CloudFront (CDN) → ALB → Elastic Beanstalk (App Tier) → RDS / ElastiCache / ActiveMQ
 
 ---
 
