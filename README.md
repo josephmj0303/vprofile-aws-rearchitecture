@@ -189,7 +189,17 @@ vprofile-aws-rearchitecture/
 
 ## 🖥 Screenshots 
 
+### App Login 
+![app_login](screenshots/app_login.png)
 
+### Home Page
+![app_home](screenshots/app_home.png)
+
+### Cache-Miss
+![cache_miss](screenshots/cache_miss.png)
+
+### Cache-Hit
+![cache_hit](screenshots/cache_hit.png)
 
 ---
 
