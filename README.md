@@ -61,6 +61,26 @@ User → Route53 (DNS) → CloudFront (CDN) → ALB → Elastic Beanstalk (App T
 
 ---
 
+## 🔧 Technology Stack
+
+| Category                | Technology                |
+| ----------------------- | ------------------------- |
+| Cloud                   | AWS                       |
+| Compute                 | Elastic Beanstalk         |
+| Database                | Amazon RDS (MySQL)        |
+| Cache                   | ElastiCache (Memcached)   |
+| Messaging               | Amazon MQ (ActiveMQ)      |
+| Networking              | ALB, Route53, CloudFront  |
+| Build Tool              | Maven                     |
+
+---
+
+## 🧠 Execution Flow 
+![Execution_flow](diagrams/execution_flow.png)
+
+
+---
+
 ## ▶️ How to Deploy (Quick Start)
 
 * This section provides a high-level deployment flow.  
@@ -110,24 +130,6 @@ Runtime behavior was verified using:
 
 Screenshots are available in the `screenshots/` directory.
 
----
-
-## 🔧 Technology Stack
-
-| Category                | Technology                |
-| ----------------------- | ------------------------- |
-| Cloud                   | AWS                       |
-| Compute                 | Elastic Beanstalk         |
-| Database                | Amazon RDS (MySQL)        |
-| Cache                   | ElastiCache (Memcached)   |
-| Messaging               | Amazon MQ (ActiveMQ)      |
-| Networking              | ALB, Route53, CloudFront  |
-| Build Tool              | Maven                     |
-
----
-
-## 🧠 Execution Flow 
-![Execution_flow](diagrams/execution_flow.png)
 
 ---
 
