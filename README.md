@@ -128,9 +128,6 @@ Runtime behavior was verified using:
 - Cache miss → DB fetch → cache insert
 - Cache hit → data served from ElastiCache
 
-Screenshots are available in the `screenshots/` directory.
-
-
 ---
 
 ## 🚀 DevOps Capabilities Demonstrated
@@ -189,6 +186,13 @@ vprofile-aws-rearchitecture/
 - HTTPS enforced via ACM + ALB
 
 ---
+
+## 🖥 Screenshots 
+
+
+
+---
+
 
 ## 📈 Future Enhancements
 - GitHub Actions pipeline for build → artifact → deploy to Elastic Beanstalk
